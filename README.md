@@ -152,5 +152,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-### Summary
-| [WeddingPlanner app](https://github.com/AmrTelbani/WeddingPlanner) | [WeddingPlanner apk](https://ufile.io/rucgh9g6) | Team Name: Masters.  
+### Table
+| [WeddingPlanner Repositry](https://github.com/AmrTelbani/WeddingPlanner) | [WeddingPlanner apk](https://ufile.io/rucgh9g6) | Team Name: Masters | WeddingPlanner Application is a application for people who are looking for buy or rent stuff for marriage and for sellers of these stuff | MIT License | [Amr Telbani](https://github.com/AmrTelbani) | Khaliel Assar
+   
