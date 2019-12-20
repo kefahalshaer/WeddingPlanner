@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "184038725609",
+    "firebase_url": "https://weeding-planner.firebaseio.com",
+    "project_id": "weeding-planner",
+    "storage_bucket": "weeding-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184038725609:android:b7a530f234487c87aadd78",
+        "android_client_info": {
+          "package_name": "amr.com.weedingplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184038725609-6iuj4suvc0i5uhvb0ulrejku2tctikup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "amr.com.weedingplanner",
+            "certificate_hash": "40d30b385499bcb3d1ed32a085c79758e1ab6ce3"
+          }
+        },
+        {
+          "client_id": "184038725609-bupu59iapugo80n49jhk1mvus40qn806.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdI5NrVav7p_ZREPsYlt_HG_HHx9dNxZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184038725609-bupu59iapugo80n49jhk1mvus40qn806.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

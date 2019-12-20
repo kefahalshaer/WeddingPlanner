@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Details">
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/weeding_car" />
+
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/img_product"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/user2" />
+
+    <TextView
+        android:id="@+id/txt_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_product"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_profile"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/img_profile"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/box" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_name"
+        android:text="Product Name:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_name_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/img_name"
+        android:layout_marginEnd="18dp"
+        android:textColor="#E65100"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/img_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/description" />
+
+
+    <TextView
+        android:id="@+id/txt_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/img_des"
+        android:layout_marginTop="18dp"
+        android:text="Description:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_des"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="#E65100"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/img_des"
+        />
+
+    <ImageView
+        android:id="@+id/img_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_description"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/money" />
+
+
+    <TextView
+        android:id="@+id/txt_spf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_description"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_money"
+        android:text="Product Price:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_spf"
+        android:layout_toEndOf="@id/img_money"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#FF5252"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_price"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/agenda" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_price"
+        android:layout_toEndOf="@id/img_phone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="Store Phone:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_2"
+        android:layout_toEndOf="@id/img_phone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#E65100"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/bt_chat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:gravity="center"
+            android:text="Chat"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.02"
+            android:background="#FFF" />
+
+        <Button
+            android:id="@+id/bt_rent"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style3"
+            android:gravity="center"
+            android:text="Rent"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

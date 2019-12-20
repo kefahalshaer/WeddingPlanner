@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller_AddProduct">
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Product Image"
+        android:textColor="#000" />
+
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/add" />
+
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_product"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Product Name"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_1"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edt_text"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Product Cost"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/product_cost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_2"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edt_text"
+        android:inputType="numberDecimal"
+        android:paddingStart="8dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_cost"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Description"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edt_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_5"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/edt_text"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_product_description"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="center"
+        android:text="Rent Available:"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_product_description"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/txt4"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/btn_style3"
+        android:text="Add Product"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

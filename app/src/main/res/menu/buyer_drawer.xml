@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home" />
+        <item
+            android:id="@+id/messages"
+            android:title="Messages"
+            android:icon="@drawable/message"/>
+
+        <item
+            android:id="@+id/notes"
+            android:title="Notes"
+            android:icon="@drawable/document"/>
+
+        <item
+            android:id="@+id/rents"
+            android:title="Rents"
+            android:icon="@drawable/rent"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/support"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>

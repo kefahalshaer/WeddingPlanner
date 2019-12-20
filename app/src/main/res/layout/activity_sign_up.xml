@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="0.8"
+        android:background="@drawable/login" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="38dp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Become One of  Our\nFamily"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/name" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/color"
+        android:layout_toEndOf="@id/img_name"
+        android:text="Full Name"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_name"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_text"
+        android:paddingStart="18dp"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_mail"
+        android:text="Email"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_mail"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_text"
+        android:paddingStart="18dp"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/img_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/lock" />
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_mail"
+        android:text="Password"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_password"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_text"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/img_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/lock" />
+
+    <TextView
+        android:id="@+id/txt_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_mail"
+        android:text="Repeat Password"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edt_password2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_password2"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_text"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_style"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edt_email"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edt_text"
+        android:gravity="center"
+        android:hint="First and Last Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:text="ali"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_password"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edt_text"
+        android:gravity="center"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:text="ali@gmail.com"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edt_password2"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edt_text"
+        android:gravity="center"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:text="password"
+        />
+
+    <EditText
+        android:id="@+id/edt_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/liner_type"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/edt_text"
+        android:gravity="center"
+        android:hint="Password Again"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:text="password"
+        />
+-->
+
+    <!-- // Next Activity for seller -->
+
+    <!--
+        <LinearLayout
+            android:id="@+id/liner_type"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/bt_signup"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:alpha="0.7"
+            android:background="#524242"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_seller"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Seller"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_buyer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Buyer"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="64dp"
+            android:alpha="0.7"
+            android:background="@drawable/btn_style"
+            android:gravity="center"
+            android:text="SignUp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    -->
+
+</RelativeLayout>

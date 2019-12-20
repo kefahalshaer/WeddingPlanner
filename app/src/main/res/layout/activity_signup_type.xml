@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".signup_type">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="You are "
+        android:textColor="#FFF"
+        android:textSize="38sp" />
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/card_client"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="18dp"
+        app:cardCornerRadius="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/client" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_client"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Client"
+                android:textColor="#FF5252"
+                android:textSize="28sp" />
+
+            <CheckBox
+                android:id="@+id/check_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_seller"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/card_client"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="18dp"
+        app:cardCornerRadius="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/seller" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_seller"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Seller"
+                android:textColor="#FF5252"
+                android:textSize="28sp" />
+
+            <CheckBox
+                android:id="@+id/check_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_seller"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/btn_style2"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="#FF5252"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

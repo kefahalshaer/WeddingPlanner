@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:alpha="0.8"
+        android:background="@drawable/login"
+         />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="54dp"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Welcome to Wedding Planner"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@id/img_mail"
+        android:text="Email"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_mail"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_text"
+        android:paddingStart="18dp"
+        android:textSize="22sp"
+        android:text="testcilent@gmail.com"/>
+
+    <ImageView
+        android:id="@+id/img_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/lock" />
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@id/img_password"
+        android:text="password"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_password"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_text"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:textSize="22sp"
+        android:text="password"/>
+
+    <TextView
+        android:id="@+id/txt_wrong_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:text="Email or Password is Wrong!"
+        android:textColor="#F54949"
+        android:visibility="invisible"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password">
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/btn_style"
+            android:gravity="center"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="8dp"
+        android:text="Don't Have Account?" />
+
+    <TextView
+        android:id="@+id/txt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/txt3"
+        android:text="Sign Up"
+        android:textColor="#FF6E40"
+        android:textStyle="bold" />
+
+</RelativeLayout>

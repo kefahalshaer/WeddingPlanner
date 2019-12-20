@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopInfo">
+
+    <ImageView
+        android:id="@+id/img_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/list" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        android:layout_toEndOf="@id/img_cat"
+        android:text="Shop Category"
+        android:textColor="#413F3F"
+        android:textSize="24sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardCornerRadius="25dp"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        app:cardBackgroundColor="#E4E7E7">
+
+        <Spinner
+            android:id="@+id/spin_catagroie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E4E7E7"
+            android:gravity="center"
+            android:popupBackground="#E4E7E7"
+            android:spinnerMode="dropdown" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_name"
+        android:text="Shop Name"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edt_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_name"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edt_text"
+        android:textColor="#2979FF"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_shopname"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/agenda" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_shopname"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/img_name"
+        android:text="Phone Number"
+        android:textColor="#413F3F"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/img_phone"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/edt_text"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#2979FF"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/btn_style3"
+        android:text="SignUp"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
